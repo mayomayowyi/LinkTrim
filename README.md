@@ -10,12 +10,12 @@
 
 | ブラウザ | インストール |
 | --- | --- |
-| **Chrome / Edge / Vivaldi** | **[Chrome版 v0.0.1（ZIP・手動インストール）](https://github.com/mayomayowyi/LinkTrim/releases/download/v0.0.1/LinkTrim-chrome-v0.0.1.zip)** |
+| **Chrome / Edge / Vivaldi** | **[Chromeウェブストア](https://chromewebstore.google.com/detail/linktrim/mnfojcijmgbdhllgpieahejkhecblcnj)** |
 | **Firefox** | **[Firefox Add-ons](https://addons.mozilla.org/ja/firefox/addon/linktrim/)** |
 
 [最新リリース](https://github.com/mayomayowyi/LinkTrim/releases/latest)
 
-GitHubのZIPから手動インストールしたChrome系ブラウザ版は、自動更新されません。
+[Chrome版 v0.0.1（ZIP・手動インストール）](https://github.com/mayomayowyi/LinkTrim/releases/download/v0.0.1/LinkTrim-chrome-v0.0.1.zip)も利用できますが、GitHubのZIPから手動インストールした版は自動更新されません。
 
 ## 主な機能
 
