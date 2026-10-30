@@ -28,7 +28,7 @@
 ### 対応サイト
 
 - **v0.0.1：** YouTube、X（旧Twitter）
-- **v0.0.2系（ストア更新版）：** YouTube、X（旧Twitter）、Amazon.co.jp、Wikipedia。YouTube Shorts・動画一覧・リストコピーや、Xの `t.co` リンクの元URLコピーにも対応します。
+- **v0.0.2系（ストア更新版）：** YouTube、X（旧Twitter）、Amazon.co.jp。YouTube Shorts・動画一覧・リストコピーや、Xの `t.co` リンクの元URLコピーにも対応します。
 
 Chrome版は `0.0.2`、Firefox版は `0.0.2.1` です。各ストアへの反映状況は審査・公開状況によって異なります。
 
@@ -64,17 +64,6 @@ Chrome版は `0.0.2`、Firefox版は `0.0.2.1` です。各ストアへの反映
 - https://www.amazon.co.jp/example-product/dp/B0AB12CD34/?_encoding=UTF8&pd_rd_w=abcd12ef34&ref_=sr_1_1
 + https://www.amazon.co.jp/dp/B0AB12CD34/
 ```
-
-#### Wikipedia
-
-**記事URL — 不要な追跡パラメータを削除**
-
-```diff
-- https://ja.wikipedia.org/wiki/架空の記事?utm_source=abcd12ef34
-+ https://ja.wikipedia.org/wiki/架空の記事
-```
-
-Wikipediaの記事URLは元から不要なパラメータがない場合、コピー後も変わりません。
 
 閲覧中のURLは変更しません。処理はブラウザ内で行い、広告・アクセス解析・外部へのデータ送信はありません。
 
