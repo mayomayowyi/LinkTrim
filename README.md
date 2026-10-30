@@ -29,14 +29,24 @@ GitHubのZIPから手動インストールしたChrome系ブラウザ版は、�
 
 #### YouTube
 
+**通常の動画**
+
 ```text
 変換前: https://youtu.be/ABCDEFG1234?si=ABCDefg12h34IjkL
 変換後: https://youtu.be/ABCDEFG1234
+```
 
-変換前（再生リスト内）: https://www.youtube.com/watch?v=ABCDEFG1234&list=PLexample123&index=3
+**再生リスト内**
+
+```text
+変換前: https://www.youtube.com/watch?v=ABCDEFG1234&list=PLexample123&index=3
 変換後: https://www.youtube.com/watch?v=ABCDEFG1234
+```
 
-変換前（Mixリスト内）: https://www.youtube.com/watch?v=ABCDEFG1234&list=RDABCDEFG1234&start_radio=1
+**Mixリスト内**
+
+```text
+変換前: https://www.youtube.com/watch?v=ABCDEFG1234&list=RDABCDEFG1234&start_radio=1
 変換後: https://www.youtube.com/watch?v=ABCDEFG1234
 ```
 
