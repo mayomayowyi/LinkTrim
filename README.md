@@ -101,7 +101,7 @@ YouTubeでは、通常の再生リストやミックスリストから再生し�
 
 ## Chrome / Edge / Vivaldiへの手動インストール（GitHub版）
 
-1. [最新リリース](https://github.com/mayomayowyi/LinkTrim/releases/latest)を開き、**Assets** からChrome版のZIP（例：`LinkTrim-chrome-v0.0.2.zip`）をダウンロードします。
+1. [最新リリース](https://github.com/mayomayowyi/LinkTrim/releases/latest)を開き、**Assets** からChrome版のZIP（ファイル名に `chrome` を含むもの）をダウンロードします。
 2. ZIPを右クリックし、**「すべて展開」** を選びます。
 3. アドレスバーに `chrome://extensions` と入力します。Vivaldiは `vivaldi://extensions` でも開けます。
 4. 右上の **「デベロッパーモード」** をオンにします。
