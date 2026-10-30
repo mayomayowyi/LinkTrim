@@ -40,11 +40,11 @@ Chrome版は `0.0.2`、Firefox版は `0.0.2.1` です。各ストアへの反映
 
 #### YouTube
 
-**再生リスト内 — 動画単体のURLに変換**
+**通常の動画 — 不要な共有パラメータを削除**
 
 ```diff
-- https://www.youtube.com/watch?v=abcd12ef34g&list=PLabcd12ef34&index=3
-+ https://www.youtube.com/watch?v=abcd12ef34g
+- https://youtu.be/abcd12ef34g?si=abcd12ef34gh5678
++ https://youtu.be/abcd12ef34g
 ```
 
 #### X（旧Twitter）
