@@ -120,8 +120,25 @@ YouTubeでは、通常の再生リストやミックスリストから再生し�
 
 [Firefox Add-ons](https://addons.mozilla.org/ja/firefox/addon/linktrim/)で **「Firefoxへ追加」** を押してください。
 
+## ソースコード（OSS）
+
+LinkTrimの実装、ブラウザ別Manifest、テストを公開しています。
+
+- `src/`：拡張機能の実装
+- `manifests/chrome.json`：Chrome版 v0.0.2
+- `manifests/firefox.json`：Firefox版 v0.0.2.1
+- `scripts/package.py`：配布用ZIP生成スクリプト
+- `tests/`：自動テスト
+
+```sh
+npm test
+python scripts/package.py
+```
+
+Python 3で追加依存なしにZIPを生成できます。テストにはNode.jsが必要です。出力先は`dist/`です。
+
 ## ライセンス
 
-LinkTrimはMITライセンスで提供しています。最新バージョンのソースコード一式はGitHubへの反映準備中です。
+LinkTrimはMITライセンスで提供しています。ソースコード一式とビルド手順をこのリポジトリで公開しています。
 
 [MIT License](LICENSE) — Copyright (c) 2026 MAYOI
