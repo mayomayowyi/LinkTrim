@@ -36,29 +36,15 @@ Chrome版は `0.0.2`、Firefox版は `0.0.2.1` です。各ストアへの反映
 
 ### URLの変換例
 
-**赤い「−」が変換前、緑の「＋」がコピーされるURL**です。不要な部分だけを取り除きます。
+**赤い「−」が変換前、緑の「＋」がコピーされるURL**です。以下は架空のID・ページ名を使った例です。
 
 #### YouTube
 
-**① 通常の動画 — 共有パラメータを削除**
+**再生リスト内 — 動画単体のURLに変換**
 
 ```diff
-- https://youtu.be/ABCDEFG1234?si=ABCDefg12h34IjkL
-+ https://youtu.be/ABCDEFG1234
-```
-
-**② 再生リスト内 — 動画だけのURLに変換**
-
-```diff
-- https://www.youtube.com/watch?v=ABCDEFG1234&list=PLexample123&index=3
-+ https://www.youtube.com/watch?v=ABCDEFG1234
-```
-
-**③ ミックスリスト内 — 動画だけのURLに変換**
-
-```diff
-- https://www.youtube.com/watch?v=ABCDEFG1234&list=RDABCDEFG1234&start_radio=1
-+ https://www.youtube.com/watch?v=ABCDEFG1234
+- https://www.youtube.com/watch?v=abcd12ef34g&list=PLabcd12ef34&index=3
++ https://www.youtube.com/watch?v=abcd12ef34g
 ```
 
 #### X（旧Twitter）
@@ -66,9 +52,29 @@ Chrome版は `0.0.2`、Firefox版は `0.0.2.1` です。各ストアへの反映
 **投稿URL — 共有パラメータを削除**
 
 ```diff
-- https://x.com/abc_1/status/2115970570861031564?a=a1bCDefGHIJKLmNOPq2&s=20
-+ https://x.com/abc_1/status/2115970570861031564
+- https://x.com/example/status/1234567890123456789?a=abcd12ef34&s=20
++ https://x.com/example/status/1234567890123456789
 ```
+
+#### Amazon.co.jp
+
+**商品URL — 商品ID（ASIN）だけを残して短縮**
+
+```diff
+- https://www.amazon.co.jp/example-product/dp/B0AB12CD34/?_encoding=UTF8&pd_rd_w=abcd12ef34&ref_=sr_1_1
++ https://www.amazon.co.jp/dp/B0AB12CD34/
+```
+
+#### Wikipedia
+
+**記事URL — 不要な追跡パラメータを削除**
+
+```diff
+- https://ja.wikipedia.org/wiki/架空の記事?utm_source=abcd12ef34
++ https://ja.wikipedia.org/wiki/架空の記事
+```
+
+Wikipediaの記事URLは元から不要なパラメータがない場合、コピー後も変わりません。
 
 閲覧中のURLは変更しません。処理はブラウザ内で行い、広告・アクセス解析・外部へのデータ送信はありません。
 
