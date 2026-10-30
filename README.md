@@ -122,6 +122,6 @@ YouTubeでは、通常の再生リストやミックスリストから再生し�
 
 ## ライセンス
 
-LinkTrimはMITライセンスのオープンソースプロジェクトです。
+LinkTrimはMITライセンスで提供しています。最新バージョンのソースコード一式はGitHubへの反映準備中です。
 
 [MIT License](LICENSE) — Copyright (c) 2026 MAYOI
