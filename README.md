@@ -6,16 +6,16 @@
   URLの不要な追跡・共有パラメータを取り除いてコピーするブラウザ拡張機能です。
 </div>
 
-## ダウンロード
+## ダウンロード・インストール
 
-| ブラウザ | ダウンロード |
+| ブラウザ | インストール |
 | --- | --- |
-| **Chrome / Edge / Vivaldi** | **[Chrome版 v0.0.1（ZIP）](https://github.com/mayomayowyi/LinkTrim/releases/download/v0.0.1/LinkTrim-chrome-v0.0.1.zip)** |
+| **Chrome / Edge / Vivaldi** | **[Chrome版 v0.0.1（ZIP・手動インストール）](https://github.com/mayomayowyi/LinkTrim/releases/download/v0.0.1/LinkTrim-chrome-v0.0.1.zip)** |
 | **Firefox** | **[Firefox Add-ons](https://addons.mozilla.org/ja/firefox/addon/linktrim/)** |
 
 [最新リリース](https://github.com/mayomayowyi/LinkTrim/releases/latest)
 
-Chrome系ブラウザは手動インストールのため、自動更新されません。
+GitHubのZIPから手動インストールしたChrome系ブラウザ版は、自動更新されません。
 
 ## 使い方
 
@@ -56,7 +56,7 @@ Xではタイムラインの投稿からも直接コピーできます。時計�
 
 閲覧中のURLは変更しません。処理はブラウザ内で行い、広告・アクセス解析・外部へのデータ送信はありません。
 
-## Chrome / Edge / Vivaldiへのインストール
+## Chrome / Edge / Vivaldiへの手動インストール（GitHub版）
 
 1. [Chrome版ZIP](https://github.com/mayomayowyi/LinkTrim/releases/download/v0.0.1/LinkTrim-chrome-v0.0.1.zip)をダウンロードします。
 2. ZIPを右クリックし、**「すべて展開」** を選びます。
