@@ -3,7 +3,7 @@
 
   # LinkTrim
 
-  不要な追跡・共有パラメータを取り除いて、URLをコピーするブラウザ拡張機能です。
+  URLの不要な追跡・共有パラメータを取り除いてコピーするブラウザ拡張機能です。
 </div>
 
 ## ダウンロード
@@ -13,17 +13,36 @@
 | **Chrome / Edge / Vivaldi** | **[Chrome版 v0.0.1（ZIP）](https://github.com/mayomayowyi/LinkTrim/releases/download/v0.0.1/LinkTrim-chrome-v0.0.1.zip)** |
 | **Firefox** | **[Firefox Add-ons](https://addons.mozilla.org/ja/firefox/addon/linktrim/)** |
 
-[最新版のリリースを確認](https://github.com/mayomayowyi/LinkTrim/releases/latest)
+[最新リリース](https://github.com/mayomayowyi/LinkTrim/releases/latest)
 
-Chrome系ブラウザでは手動でインストールするため、自動更新されません。Firefox版はMozillaによる公開が完了してからインストールできます。
+Chrome系ブラウザは手動インストールのため、自動更新されません。
+
+## 使い方
+
+### ツールバーからコピー
+
+拡張機能のLinkTrimアイコンをクリックすると、開いているページのURLをコピーできます。
+
+リンクを右クリックして「単体URLをコピー」を選ぶと、リンク先のURLもコピーできます。
+
+### X・YouTubeのページ内からコピー
+
+XとYouTubeには、専用のコピーボタンが表示されます。
+
+- **リンクアイコン**：投稿や動画の単体URLをコピー
+- **時計アイコン**：動画の現在の再生位置付きURLをコピー
+
+Xではタイムラインの投稿からも直接コピーできます。時計アイコンは動画付きの投稿に表示されます。
+
+![XとYouTubeのコピー操作](docs/images/copy-buttons.png)
 
 ## 主な機能
 
-- 現在のページやリンク先のURLから不要なパラメータを取り除いてコピー
-- Xのタイムラインから投稿を開かずにURLをコピー
+- URLの不要な追跡・共有パラメータを除去
 - YouTubeのMix・再生リスト情報を除いた動画単体URLをコピー
-- X・YouTubeの動画を、再生位置付きURLとしてコピー
-- X・YouTubeに小さなコピーボタンを追加
+- X・YouTubeの動画の再生位置付きURLをコピー
+- Xのタイムラインから投稿を開かずにコピー
+- コピー後に「OK」を表示し、一定時間後に消去
 
 ### 変換例
 
@@ -35,28 +54,23 @@ Chrome系ブラウザでは手動でインストールするため、自動更�
 変換後: https://x.com/abc_1/status/2115970570861031564
 ```
 
-閲覧中のURLは変更しません。コピー処理はブラウザ内で行い、広告・アクセス解析・外部へのデータ送信はありません。
+閲覧中のURLは変更しません。処理はブラウザ内で行い、広告・アクセス解析・外部へのデータ送信はありません。
 
 ## Chrome / Edge / Vivaldiへのインストール
 
 1. [Chrome版ZIP](https://github.com/mayomayowyi/LinkTrim/releases/download/v0.0.1/LinkTrim-chrome-v0.0.1.zip)をダウンロードします。
-2. ZIPを右クリックして **「すべて展開」** を選びます。
-3. ブラウザのアドレスバーに `chrome://extensions` と入力します。Vivaldiなら `vivaldi://extensions` でも開けます。
+2. ZIPを右クリックし、**「すべて展開」** を選びます。
+3. アドレスバーに `chrome://extensions` と入力します。Vivaldiは `vivaldi://extensions` でも開けます。
 4. 右上の **「デベロッパーモード」** をオンにします。
-5. **「パッケージ化されていない拡張機能を読み込む」** を選び、展開したフォルダーを指定します。
-6. ツールバーの拡張機能メニューからLinkTrimを固定すると、アイコンをクリックしてURLをコピーできます。
+5. **「パッケージ化されていない拡張機能を読み込む」** を押し、展開したフォルダーを選びます。
 
-フォルダー内に `manifest.json` があることを確認してください。ZIPファイルそのものは選択できません。
+フォルダーの直下に `manifest.json` があることを確認してください。ツールバーにアイコンを固定しておくと、すぐにコピーできます。
 
-更新時は新しいZIPを展開して読み込み直します。旧版を有効にしたままだと右クリックメニューが重複するため、旧版は無効にしてください。
+更新時は新しいZIPを展開して読み込み直してください。重複を避けるため、旧版は無効にします。
 
 ## Firefoxへのインストール
 
-[Firefox Add-onsのLinkTrim](https://addons.mozilla.org/ja/firefox/addon/linktrim/)で **「Firefoxへ追加」** を選んでください。未署名のZIPを通常版Firefoxに直接インストールすることはできません。
-
-## ソースコード
-
-配布ZIP内のJavaScriptは圧縮・難読化していません。開発用ソースにはテストとパッケージ作成スクリプトも含まれます。
+[Firefox Add-ons](https://addons.mozilla.org/ja/firefox/addon/linktrim/)で **「Firefoxへ追加」** を押してください。
 
 ## ライセンス
 
