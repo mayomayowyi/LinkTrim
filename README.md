@@ -48,6 +48,8 @@ YouTubeでは、通常の再生リストやMixリストから再生している�
 
 ### 変換例
 
+#### YouTube
+
 ```text
 変換前: https://youtu.be/ABCDEFG1234?si=ABCDefg12h34IjkL
 変換後: https://youtu.be/ABCDEFG1234
@@ -57,7 +59,11 @@ YouTubeでは、通常の再生リストやMixリストから再生している�
 
 変換前（Mixリスト内）: https://www.youtube.com/watch?v=ABCDEFG1234&list=RDABCDEFG1234&start_radio=1
 変換後: https://www.youtube.com/watch?v=ABCDEFG1234
+```
 
+#### X（旧Twitter）
+
+```text
 変換前: https://x.com/abc_1/status/2115970570861031564?a=a1bCDefGHIJKLmNOPq2&s=20
 変換後: https://x.com/abc_1/status/2115970570861031564
 ```
