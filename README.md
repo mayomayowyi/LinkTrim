@@ -34,7 +34,7 @@ XとYouTubeには、専用のコピーボタンが表示されます。
 
 Xではタイムラインの投稿からも直接コピーできます。時計アイコンは動画付きの投稿に表示されます。
 
-![XとYouTubeのコピー操作](docs/images/copy-buttons.png)
+![XとYouTubeのコピー操作](docs/images/copy-buttons.webp)
 
 ## 主な機能
 
