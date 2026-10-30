@@ -25,36 +25,40 @@ GitHubのZIPから手動インストールしたChrome系ブラウザ版は、�
 - Xのタイムラインから投稿を開かずにコピー
 - コピー後に「OK」を表示し、一定時間後に消去
 
-### 変換例
+### URLの変換例
+
+**赤い「−」が変換前、緑の「＋」がコピーされるURL**です。不要な部分だけを取り除きます。
 
 #### YouTube
 
-**通常の動画**
+**① 通常の動画 — 共有パラメータを削除**
 
-```text
-変換前: https://youtu.be/ABCDEFG1234?si=ABCDefg12h34IjkL
-変換後: https://youtu.be/ABCDEFG1234
+```diff
+- https://youtu.be/ABCDEFG1234?si=ABCDefg12h34IjkL
++ https://youtu.be/ABCDEFG1234
 ```
 
-**再生リスト内**
+**② 再生リスト内 — 動画だけのURLに変換**
 
-```text
-変換前: https://www.youtube.com/watch?v=ABCDEFG1234&list=PLexample123&index=3
-変換後: https://www.youtube.com/watch?v=ABCDEFG1234
+```diff
+- https://www.youtube.com/watch?v=ABCDEFG1234&list=PLexample123&index=3
++ https://www.youtube.com/watch?v=ABCDEFG1234
 ```
 
-**Mixリスト内**
+**③ Mixリスト内 — 動画だけのURLに変換**
 
-```text
-変換前: https://www.youtube.com/watch?v=ABCDEFG1234&list=RDABCDEFG1234&start_radio=1
-変換後: https://www.youtube.com/watch?v=ABCDEFG1234
+```diff
+- https://www.youtube.com/watch?v=ABCDEFG1234&list=RDABCDEFG1234&start_radio=1
++ https://www.youtube.com/watch?v=ABCDEFG1234
 ```
 
 #### X（旧Twitter）
 
-```text
-変換前: https://x.com/abc_1/status/2115970570861031564?a=a1bCDefGHIJKLmNOPq2&s=20
-変換後: https://x.com/abc_1/status/2115970570861031564
+**投稿URL — 共有パラメータを削除**
+
+```diff
+- https://x.com/abc_1/status/2115970570861031564?a=a1bCDefGHIJKLmNOPq2&s=20
++ https://x.com/abc_1/status/2115970570861031564
 ```
 
 閲覧中のURLは変更しません。処理はブラウザ内で行い、広告・アクセス解析・外部へのデータ送信はありません。
