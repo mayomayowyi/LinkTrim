@@ -86,7 +86,9 @@ Xではタイムラインの投稿からも直接コピーできます。時計�
 
 YouTubeでは、通常の再生リストやミックスリストから再生している動画も、リスト情報を取り除いて**動画単体のURL**としてコピーできます。
 
-![XとYouTubeのコピー操作](docs/images/copy-buttons.webp)
+| X・YouTubeのリンク・再生位置コピー | YouTube一覧の単体リンク・リストコピー |
+| :---: | :---: |
+| <img src="docs/images/copy-buttons.webp" alt="XとYouTubeのコピー操作" width="480"> | <img src="docs/images/list-copy.webp" alt="YouTubeの単体URLとリストURLのコピーボタン" width="480"> |
 
 ### YouTubeの一覧からコピー（v0.0.2系）
 
@@ -99,7 +101,7 @@ YouTubeでは、通常の再生リストやミックスリストから再生し�
 
 ## Chrome / Edge / Vivaldiへの手動インストール（GitHub版）
 
-1. [Chrome版ZIP](https://github.com/mayomayowyi/LinkTrim/releases/download/v0.0.1/LinkTrim-chrome-v0.0.1.zip)をダウンロードします。
+1. [最新リリース](https://github.com/mayomayowyi/LinkTrim/releases/latest)を開き、**Assets** からChrome版のZIP（例：`LinkTrim-chrome-v0.0.2.zip`）をダウンロードします。
 2. ZIPを右クリックし、**「すべて展開」** を選びます。
 3. アドレスバーに `chrome://extensions` と入力します。Vivaldiは `vivaldi://extensions` でも開けます。
 4. 右上の **「デベロッパーモード」** をオンにします。
