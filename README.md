@@ -93,6 +93,15 @@ YouTubeでは、通常の再生リストやミックスリストから再生し�
 
 ![XとYouTubeのコピー操作](docs/images/copy-buttons.webp)
 
+### YouTubeの一覧からコピー（v0.0.2 テスト版）
+
+動画一覧のサムネイルにカーソルを合わせると、コピーボタンが表示されます。
+
+- **リンクアイコン（鎖のマーク）**：動画単体のURLをコピー
+- **リストアイコン（横線3本のマーク）**：再生リスト・ミックスリストのURLを、動画の指定なしでコピー
+
+リストアイコンは、コピーできる再生リストがある場合に表示されます。
+
 ## Chrome / Edge / Vivaldiへの手動インストール（GitHub版）
 
 1. [Chrome版ZIP](https://github.com/mayomayowyi/LinkTrim/releases/download/v0.0.1/LinkTrim-chrome-v0.0.1.zip)をダウンロードします。
