@@ -27,8 +27,10 @@
 
 ### 対応サイト
 
-- **公開版 v0.0.1：** YouTube、X（旧Twitter）
-- **次期版 v0.0.2（テスト中・未公開）：** Amazon.co.jp、Wikipedia（YouTube Shortsや動画一覧のコピー機能も拡張予定）
+- **v0.0.1：** YouTube、X（旧Twitter）
+- **v0.0.2系（ストア更新版）：** YouTube、X（旧Twitter）、Amazon.co.jp、Wikipedia。YouTube Shorts・動画一覧・リストコピーや、Xの `t.co` リンクの元URLコピーにも対応します。
+
+Chrome版は `0.0.2`、Firefox版は `0.0.2.1` です。各ストアへの反映状況は審査・公開状況によって異なります。
 
 上記以外のサイトでも、ツールバーや右クリックメニューからURLをコピーできます。専用のコピーボタンやサイト固有のURL短縮には個別の対応が必要なため、**その他のサイトにも順次対応予定**です。
 
@@ -93,7 +95,7 @@ YouTubeでは、通常の再生リストやミックスリストから再生し�
 
 ![XとYouTubeのコピー操作](docs/images/copy-buttons.webp)
 
-### YouTubeの一覧からコピー（v0.0.2 テスト版）
+### YouTubeの一覧からコピー（v0.0.2系）
 
 動画一覧のサムネイルにカーソルを合わせると、コピーボタンが表示されます。
 
@@ -119,5 +121,7 @@ YouTubeでは、通常の再生リストやミックスリストから再生し�
 [Firefox Add-ons](https://addons.mozilla.org/ja/firefox/addon/linktrim/)で **「Firefoxへ追加」** を押してください。
 
 ## ライセンス
+
+LinkTrimはMITライセンスのオープンソースプロジェクトです。
 
 [MIT License](LICENSE) — Copyright (c) 2026 MAYOI
