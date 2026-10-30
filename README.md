@@ -34,12 +34,14 @@ XとYouTubeには、専用のコピーボタンが表示されます。
 
 Xではタイムラインの投稿からも直接コピーできます。時計アイコンは動画付きの投稿に表示されます。
 
+YouTubeでは、通常の再生リストやMixリストから再生している動画も、リスト情報を取り除いて**動画単体のURL**としてコピーできます。
+
 ![XとYouTubeのコピー操作](docs/images/copy-buttons.webp)
 
 ## 主な機能
 
 - URLの不要な追跡・共有パラメータを除去
-- YouTubeのMix・再生リスト情報を除いた動画単体URLをコピー
+- YouTubeの通常の再生リスト・Mixリストなどからも、リスト情報を除いた動画単体URLをコピー
 - X・YouTubeの動画の再生位置付きURLをコピー
 - Xのタイムラインから投稿を開かずにコピー
 - コピー後に「OK」を表示し、一定時間後に消去
@@ -49,6 +51,12 @@ Xではタイムラインの投稿からも直接コピーできます。時計�
 ```text
 変換前: https://youtu.be/ABCDEFG1234?si=ABCDefg12h34IjkL
 変換後: https://youtu.be/ABCDEFG1234
+
+変換前（再生リスト内）: https://www.youtube.com/watch?v=ABCDEFG1234&list=PLexample123&index=3
+変換後: https://www.youtube.com/watch?v=ABCDEFG1234
+
+変換前（Mixリスト内）: https://www.youtube.com/watch?v=ABCDEFG1234&list=RDABCDEFG1234&start_radio=1
+変換後: https://www.youtube.com/watch?v=ABCDEFG1234
 
 変換前: https://x.com/abc_1/status/2115970570861031564?a=a1bCDefGHIJKLmNOPq2&s=20
 変換後: https://x.com/abc_1/status/2115970570861031564
