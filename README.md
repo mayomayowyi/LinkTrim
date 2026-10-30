@@ -15,8 +15,6 @@
 
 [最新リリース](https://github.com/mayomayowyi/LinkTrim/releases/latest)
 
-[Chrome版 v0.0.1（ZIP・手動インストール）](https://github.com/mayomayowyi/LinkTrim/releases/download/v0.0.1/LinkTrim-chrome-v0.0.1.zip)も利用できますが、GitHubのZIPから手動インストールした版は自動更新されません。
-
 ## 主な機能
 
 - URLの不要な追跡・共有パラメータを除去
