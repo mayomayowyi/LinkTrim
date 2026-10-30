@@ -20,7 +20,7 @@ GitHubのZIPから手動インストールしたChrome系ブラウザ版は、�
 ## 主な機能
 
 - URLの不要な追跡・共有パラメータを除去
-- YouTubeの通常の再生リスト・Mixリストなどからも、リスト情報を除いた動画単体URLをコピー
+- YouTubeの通常の再生リスト・ミックスリストなどからも、リスト情報を除いた動画単体URLをコピー
 - X・YouTubeの動画の再生位置付きURLをコピー
 - Xのタイムラインから投稿を開かずにコピー
 - コピー後に「OK」を表示し、一定時間後に消去
@@ -45,7 +45,7 @@ GitHubのZIPから手動インストールしたChrome系ブラウザ版は、�
 + https://www.youtube.com/watch?v=ABCDEFG1234
 ```
 
-**③ Mixリスト内 — 動画だけのURLに変換**
+**③ ミックスリスト内 — 動画だけのURLに変換**
 
 ```diff
 - https://www.youtube.com/watch?v=ABCDEFG1234&list=RDABCDEFG1234&start_radio=1
@@ -80,7 +80,7 @@ XとYouTubeには、専用のコピーボタンが表示されます。
 
 Xではタイムラインの投稿からも直接コピーできます。時計アイコンは動画付きの投稿に表示されます。
 
-YouTubeでは、通常の再生リストやMixリストから再生している動画も、リスト情報を取り除いて**動画単体のURL**としてコピーできます。
+YouTubeでは、通常の再生リストやミックスリストから再生している動画も、リスト情報を取り除いて**動画単体のURL**としてコピーできます。
 
 ![XとYouTubeのコピー操作](docs/images/copy-buttons.webp)
 
