@@ -64,9 +64,10 @@ function cleanUrl(input, options = {}) {
   if (videoId) {
     // This mode is explicitly about the video, never a Mix or playlist.
     const seconds = options.timeSeconds;
-    // Keep Shorts in their native format for normal link copies.
-    if (/^\/shorts\//.test(url.pathname) && !(Number.isSafeInteger(seconds) && seconds > 0)) {
-      return `https://www.youtube.com/shorts/${videoId}`;
+    // Keep shared short URLs and Shorts URLs in their original form.
+    if (!(Number.isSafeInteger(seconds) && seconds > 0)) {
+      if (host === "youtu.be" || host === "www.youtu.be") return `https://youtu.be/${videoId}`;
+      if (/^\/shorts\//.test(url.pathname)) return `https://www.youtube.com/shorts/${videoId}`;
     }
     const result = new URL("https://www.youtube.com/watch");
     result.searchParams.set("v", videoId);
