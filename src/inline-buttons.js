@@ -235,9 +235,7 @@
     return [...card.querySelectorAll("a[href]")].map(a => a.getAttribute("href") || a.href).filter(Boolean);
   }
 
-  // Unlike YouTube's thumbnail subtree, this overlay is a direct child of the
-  // document. Native hover previews may be replaced or layered above cards,
-  // but they cannot unmount or cover the extension's floating controls.
+  // Keep card controls outside YouTube's replaceable preview elements.
   const cardTargets = new Map();
   let cardOverlay = null;
   let activeTarget = null;
@@ -342,9 +340,6 @@
     activeTarget = entry;
     positionOverlay(entry, cardHitRect(entry));
   }
-
-  // The Amazon detail button is positioned inside the image column. Native
-  // document scrolling now moves it with the Share control without JS timers.
 
   function installHoverTracking() {
     if (typeof document.addEventListener !== "function" || typeof window === "undefined") return;
@@ -468,9 +463,7 @@
       if (control.style.display !== "none") control.style.display = "none";
       return;
     }
-    // A position:absolute child of the image column scrolls immediately with
-    // Amazon's Share button. A fixed, body-level portal needs JS position
-    // updates on every scroll frame and visibly lags on busy product pages.
+    // Scroll the button with the image column instead of tracking viewport coordinates.
     if (getComputedStyle(area).position === "static") area.style.position = "relative";
     if (control.parentElement !== area) area.append(control);
     watchAmazonArea(area);
@@ -599,8 +592,6 @@
       display: grid; place-items: center; font: 700 11px/1 system-ui, sans-serif;
       opacity: 1; transition: opacity .35s; }
     .${BUTTON}[data-fade="true"]::after { opacity: 0; }
-    /* The global portal is outside YouTube's replaceable preview layers.
-       The user must hover a thumbnail; the portal remains clickable. */
     .linktrim-card-portal { position: fixed !important; z-index: 2147483647 !important;
       display: none; pointer-events: none; }
     .linktrim-card-portal .linktrim-card-controls { position: relative; display: flex;
