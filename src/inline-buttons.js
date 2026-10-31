@@ -237,14 +237,6 @@
     return [...card.querySelectorAll("a[href]")].map(a => a.getAttribute("href") || a.href).filter(Boolean);
   }
 
-  function safeHost(card, hostSelectors, preferredAnchor) {
-    let host = card.querySelector(hostSelectors);
-    if (host?.tagName === "A") host = host.parentElement;
-    if (!host && preferredAnchor) host = preferredAnchor.parentElement;
-    if (!host || host.tagName === "A" || !card.contains(host)) return null;
-    return host;
-  }
-
   // Unlike YouTube's thumbnail subtree, this overlay is a direct child of the
   // document. Native hover previews may be replaced or layered above cards,
   // but they cannot unmount or cover the extension's floating controls.
