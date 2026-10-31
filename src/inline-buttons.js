@@ -212,8 +212,6 @@
     }
   }
 
-  // The card controls live on the thumbnail, never inside an <a> element.
-  // This keeps browser navigation unchanged unless one of our buttons is pressed.
   const ytCardSelector = [
     "ytd-rich-grid-media", "ytd-video-renderer", "ytd-compact-video-renderer",
     "ytd-playlist-video-renderer", "ytd-playlist-panel-video-renderer",
